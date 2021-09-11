@@ -9,3 +9,14 @@ variable "group_name" {
     type = string
 }
 
+variable "group_policy_name" {
+    description = "The name of the policy. If omitted, Terraform will assign a random, unique name"
+    type = string
+    default = ""
+}
+
+variable "group_policy" {
+    description = "The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform"
+    type = string
+    default = ""
+}
