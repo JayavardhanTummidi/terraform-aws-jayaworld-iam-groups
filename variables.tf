@@ -20,3 +20,9 @@ variable "group_policy" {
     type = string
     default = ""
 }
+
+variable "group_policy_arn" {
+    description = "The ARN of the policy you want to apply"
+    type = string
+    default = ""
+}
