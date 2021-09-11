@@ -38,9 +38,11 @@ module "jayaworld-iam-groups" {
   })
   
   # OR 
+
   group_policy = file("./policy.json")
 
-# AWS managed policies ARN
-group_policy_arn = "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
+  # AWS managed policies ARN
+
+  group_policy_arn = "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
 
 }
