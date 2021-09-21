@@ -40,7 +40,34 @@ module "jayaworld-iam-groups" {
   # OR 
 
   group_policy = file("./policy.json")
+  
+  # OR
 
+  <<EOT
+  
+{
+    "Version": "2012-10-17",
+
+    "Statement": [
+
+        {
+
+            "Effect": "Allow",
+
+            "Action": [
+
+                "iam:GenerateCredentialReport",
+
+                "iam:GenerateServiceLastAccessedDetails",
+
+            ],
+
+            "Resource": "*"
+        }
+    ]
+}
+
+EOT
   # AWS managed policies ARN
 
   group_policy_arn = "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
