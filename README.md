@@ -44,9 +44,13 @@ module "jayaworld-iam-groups" {
   # OR
 
   <<EOT
-  
+
+
 {
+   
+   
     "Version": "2012-10-17",
+    
 
     "Statement": [
 
